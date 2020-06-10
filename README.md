@@ -10,3 +10,5 @@ shop[offers][0][name]:Jigul
 shop[offers][0][price]:100
 shop[offers][0][pictire]:http:\\rogaicopita\public\img\jigule.png
 shop[offers][0][categoryId]:1
+
+<h1>ghghgh</h1>
