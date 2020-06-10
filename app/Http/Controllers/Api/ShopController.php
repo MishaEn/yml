@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class ShopController extends Controller
 {
-    public function update(Request $request, $id)
+    public function update(Request $request, $shop_id)
     {
         //
     }

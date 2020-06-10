@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    public function update(Request $request, $id)
+    public function update(Request $request, $product_id)
     {
         //
     }
