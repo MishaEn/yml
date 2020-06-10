@@ -13,9 +13,10 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::resource('v1/products', 'Api\ProductController');
-Route::resource('v1/shop', 'Api\ProductController');
-Route::resource('v1/categories', 'Api\ProductController');
+Route::resource('v1/products', 'Api\ProductController', ['only' => 'update']);
+Route::resource('v1/shop', 'Api\ProductController', ['only' => 'update']);
+Route::resource('v1/categories', 'Api\ProductController', ['only' => 'update']);
+
 Route::post('/v1/yml_generator', 'Api\YmlGeneratorController@generate');
 Route::get('v1/get_yml', 'Api\YmlGeneratorController@get_url');
 Route::middleware('auth:api')->get('/user', function (Request $request) {
