@@ -17,7 +17,7 @@ class YmlGeneratorController extends Controller
      * generate yml file.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return false|string
      */
     public function generate(StoreYML $request)
     {
@@ -48,7 +48,7 @@ class YmlGeneratorController extends Controller
         return json_encode(['status' => 'Product list add to generate yml file']);
     }
 
-    public function get_url(){
-
+    public function get_url(Request $request){
+        var_dump($request->input('link'));
     }
 }
